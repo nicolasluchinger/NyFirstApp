@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            BtnHello = new Button();
             SuspendLayout();
             // 
-            // Main
+            // BtnHello
             // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
+            BtnHello.Location = new Point(15, 15);
+            BtnHello.Name = "BtnHello";
+            BtnHello.Size = new Size(94, 32);
+            BtnHello.TabIndex = 0;
+            BtnHello.Text = "Hallo";
+            BtnHello.UseVisualStyleBackColor = true;
+            // 
+            // MyFirstAppForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Name = "Main";
+            ClientSize = new Size(467, 225);
+            Controls.Add(BtnHello);
+            Margin = new Padding(2, 2, 2, 2);
+            Name = "MyFirstAppForm";
             Text = "MyFirstApp";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button BtnHello;
     }
 }
